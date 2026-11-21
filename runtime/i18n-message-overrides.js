@@ -19,8 +19,8 @@ function mergeObject(target, source) {
 const I18N_MESSAGE_OVERRIDES = {
   "zh-CN": {
     notices: {
-      mobileAssistantUnavailable: "FLOWnote 助手在此设备上暂不可用。请检查日志后重试。",
-      mobileAssistantOpenFailed: "无法打开 FLOWnote 助手：{message}",
+      mobileAssistantUnavailable: "WorkFlowBench 助手在此设备上暂不可用。请检查日志后重试。",
+      mobileAssistantOpenFailed: "无法打开 WorkFlowBench 助手：{message}",
       shortcutFailed: "快捷指令执行失败：{message}",
     },
     settings: {
@@ -62,7 +62,7 @@ const I18N_MESSAGE_OVERRIDES = {
         advBaseUrlName: "Base URL 覆盖",
         advBaseUrlDesc: "留空使用上面服务商/区域对应的默认 URL。",
         advUserAgentName: "User-Agent 覆盖",
-        advUserAgentDesc: "默认 FLOWnote (Obsidian)。如服务商文档要求特定标识，按其文档填写。",
+        advUserAgentDesc: "默认 WorkFlowBench (Obsidian)。如服务商文档要求特定标识，按其文档填写。",
         advVersionName: "Anthropic 版本头",
         advVersionDesc: "默认 anthropic-version: 2023-06-01。仅在服务商有特定要求时修改。",
         streamName: "启用流式回复",
@@ -77,7 +77,7 @@ const I18N_MESSAGE_OVERRIDES = {
       },
       skills: {
         heading: "技能管理",
-        intro: "内置 Skills 由 FLOWnote 自动安装和更新，不能修改；这里仅支持新增、导入和编辑你自己的自定义 Skills。",
+        intro: "内置 Skills 由 WorkFlowBench 自动安装和更新，不能修改；这里仅支持新增、导入和编辑你自己的自定义 Skills。",
         importFolder: "导入文件夹",
         add: "+ 新建技能",
         importUnsupported: "当前平台不支持直接选择文件夹。请在桌面端 Obsidian 使用「导入文件夹」，或手动复制到 Skills 安装目录。",
@@ -142,7 +142,7 @@ const I18N_MESSAGE_OVERRIDES = {
     mobile: {
       shortcuts: {
         heading: "快捷指令",
-        installName: "安装 FLOWnote 快速捕获",
+        installName: "安装 WorkFlowBench 快速捕获",
         installDesc: "打开共享快捷指令后点「添加快捷指令」，保存到本机即可。",
         openShortcut: "打开链接",
         copyShortcutLink: "复制链接",
@@ -153,7 +153,7 @@ const I18N_MESSAGE_OVERRIDES = {
         vaultNameDesc: "在快捷指令顶部「文本」一栏填入这个名称，用来生成 obsidian:// 链接。",
         copyVaultName: "复制",
         vaultCopied: "已复制笔记库名称",
-        simpleHint: "使用方式：安装上面的快捷指令后，把「当前笔记库名称」复制到快捷指令最上方的「文本」操作里；之后运行快捷指令即可快速捕获并提交到 FLOWnote。",
+        simpleHint: "使用方式：安装上面的快捷指令后，把「当前笔记库名称」复制到快捷指令最上方的「文本」操作里；之后运行快捷指令即可快速捕获并提交到 WorkFlowBench。",
       },
     },
     view: {
@@ -166,7 +166,7 @@ const I18N_MESSAGE_OVERRIDES = {
         toolFailed: "{statusText}{suffix}执行失败",
         recovering: "上一步未成功，正在尝试其他方式...",
         retrying: "正在重试...",
-        waitingResponse: "正在等待 FLOWnote 回复...",
+        waitingResponse: "正在等待 WorkFlowBench 回复...",
       },
       permission: { waiting: "等待权限确认..." },
       ask: { waiting: "等待你的回答..." },
@@ -190,14 +190,14 @@ const I18N_MESSAGE_OVERRIDES = {
         inspectChanges: "检查已保留的更改",
         inspectUncertainChanges: "重试前核对操作结果",
       },
-      toastFallback: "FLOWnote 提示",
+      toastFallback: "WorkFlowBench 提示",
       sendCanceled: "已取消发送",
       model: {
         placeholder: "模型",
         hiddenUnavailable: "模型可能不可用，已隐藏：{model}",
         unavailable: "模型不可用或未授权：{model}",
         switched: "已切换模型：{model}",
-        resetAuto: "已恢复为 FLOWnote 自动选择模型。",
+        resetAuto: "已恢复为 WorkFlowBench 自动选择模型。",
         notReady: "模型选择器还没准备好，请稍后再试。",
         selectHint: "请从选择器里选择模型。",
         switchFailed: "模型切换失败：{message}",
@@ -266,7 +266,7 @@ const I18N_MESSAGE_OVERRIDES = {
     },
     modals: {
       diagnostics: {
-        title: "FLOWnote 诊断",
+        title: "WorkFlowBench 诊断",
         notRun: "尚未运行诊断。",
         connection: "连接",
         connectionOk: "正常（{mode}）",
@@ -279,13 +279,13 @@ const I18N_MESSAGE_OVERRIDES = {
       none: "（无）",
       cancel: "取消",
       skillEditor: {
-        subtitle: "这里仅用于编辑自定义 Skill 的 SKILL.md。内置 Skills 由 FLOWnote 自动维护，不能修改；references、assets、scripts 等资源文件会保留在技能文件夹中。",
+        subtitle: "这里仅用于编辑自定义 Skill 的 SKILL.md。内置 Skills 由 WorkFlowBench 自动维护，不能修改；references、assets、scripts 等资源文件会保留在技能文件夹中。",
         slug: "技能 ID（文件夹名）",
         slugHint: "只能小写字母、数字、连字符。一旦保存就是该技能的唯一身份，改 ID 等同于重命名。",
         name: "技能名称",
         nameHint: "显示给 AI 看的名字，可以是中文。",
         description: "技能描述",
-        descriptionHint: "用一两句话说明这个技能能做什么、何时应由 FLOWnote 使用。",
+        descriptionHint: "用一两句话说明这个技能能做什么、何时应由 WorkFlowBench 使用。",
         whenToUse: "触发场景（可选）",
         whenToUseHint: "比 description 更具体的触发条件。比如「用户说『继续制卡』时」。",
         allowedTools: "允许使用的工具（可选）",
@@ -296,12 +296,12 @@ const I18N_MESSAGE_OVERRIDES = {
       },
       append: {
         title: "模型请求补充输入",
-        desc: "FLOWnote 需要更多输入。你可以编辑后插入输入框。",
+        desc: "WorkFlowBench 需要更多输入。你可以编辑后插入输入框。",
         useInput: "插入输入框",
       },
       model: {
         title: "选择模型",
-        subtitle: "使用 FLOWnote 服务商配置中的官方模型列表",
+        subtitle: "使用 WorkFlowBench 服务商配置中的官方模型列表",
         search: "搜索服务商/模型...",
         refresh: "刷新列表",
         refreshing: "刷新中...",
@@ -320,8 +320,8 @@ const I18N_MESSAGE_OVERRIDES = {
   },
   en: {
     notices: {
-      mobileAssistantUnavailable: "FLOWnote Assistant is not available on this device. Check logs and try again.",
-      mobileAssistantOpenFailed: "Could not open FLOWnote Assistant: {message}",
+      mobileAssistantUnavailable: "WorkFlowBench Assistant is not available on this device. Check logs and try again.",
+      mobileAssistantOpenFailed: "Could not open WorkFlowBench Assistant: {message}",
       shortcutFailed: "Shortcut failed: {message}",
     },
     settings: {
@@ -363,7 +363,7 @@ const I18N_MESSAGE_OVERRIDES = {
         advBaseUrlName: "Base URL override",
         advBaseUrlDesc: "Leave empty to use the default URL for the selected provider/region.",
         advUserAgentName: "User-Agent override",
-        advUserAgentDesc: "Default is FLOWnote (Obsidian). Only change this if the provider docs require it.",
+        advUserAgentDesc: "Default is WorkFlowBench (Obsidian). Only change this if the provider docs require it.",
         advVersionName: "Anthropic version header",
         advVersionDesc: "Default anthropic-version: 2023-06-01. Change only if the provider requires it.",
         streamName: "Enable streaming replies",
@@ -378,7 +378,7 @@ const I18N_MESSAGE_OVERRIDES = {
       },
       skills: {
         heading: "Skill Management",
-        intro: "Bundled Skills are installed and updated by FLOWnote and cannot be edited. You can only create, import, and edit your own custom Skills here.",
+        intro: "Bundled Skills are installed and updated by WorkFlowBench and cannot be edited. You can only create, import, and edit your own custom Skills here.",
         importFolder: "Import Folder",
         add: "+ New Skill",
         importUnsupported: "This platform cannot directly select folders. Use desktop Obsidian Import Folder or copy files into the Skills directory manually.",
@@ -400,7 +400,7 @@ const I18N_MESSAGE_OVERRIDES = {
         deleteConfirm: "Delete skill `{name}`?",
         deleted: "Deleted skill `{name}`",
         deleteFailed: "Delete failed: {msg}",
-        secretsIntro: "Installed skills need these secrets. The model only sees $KEY placeholders; FLOWnote replaces real secrets during tool execution.",
+        secretsIntro: "Installed skills need these secrets. The model only sees $KEY placeholders; WorkFlowBench replaces real secrets during tool execution.",
         secretWereadDesc: "Used by the WeRead official skill API. Prefer an official key starting with wrk-.",
         secretGenericDesc: "Used by third-party skill API calls.",
       },
@@ -424,7 +424,7 @@ const I18N_MESSAGE_OVERRIDES = {
       },
       opencode: {
         heading: "OpenCode Bridge Setup",
-        intro: "Only needed when the workflow is OpenCode Bridge. Leave CLI path empty to let FLOWnote detect it.",
+        intro: "Only needed when the workflow is OpenCode Bridge. Leave CLI path empty to let WorkFlowBench detect it.",
       },
       basic: {
         advancedIntro: "Advanced options. Keep defaults unless you need to reinstall bundled content, change skills path, or debug.",
@@ -443,7 +443,7 @@ const I18N_MESSAGE_OVERRIDES = {
     mobile: {
       shortcuts: {
         heading: "Shortcuts",
-        installName: "Install FLOWnote Quick Capture",
+        installName: "Install WorkFlowBench Quick Capture",
         installDesc: "Open the shared shortcut, tap Add Shortcut, and save it locally.",
         openShortcut: "Open Link",
         copyShortcutLink: "Copy Link",
@@ -454,7 +454,7 @@ const I18N_MESSAGE_OVERRIDES = {
         vaultNameDesc: "Paste this name into the Text action at the top of the shortcut to build obsidian:// links.",
         copyVaultName: "Copy",
         vaultCopied: "Vault name copied",
-        simpleHint: "Install the shortcut above, copy Current Vault Name into the top Text action, then run the shortcut to quick-capture into FLOWnote.",
+        simpleHint: "Install the shortcut above, copy Current Vault Name into the top Text action, then run the shortcut to quick-capture into WorkFlowBench.",
       },
     },
     view: {
@@ -467,7 +467,7 @@ const I18N_MESSAGE_OVERRIDES = {
         toolFailed: "{statusText}{suffix} failed",
         recovering: "Trying another approach...",
         retrying: "Retrying...",
-        waitingResponse: "Waiting for FLOWnote response...",
+        waitingResponse: "Waiting for WorkFlowBench response...",
       },
       permission: { waiting: "Waiting for permission confirmation..." },
       ask: { waiting: "Waiting for your answer..." },
@@ -491,14 +491,14 @@ const I18N_MESSAGE_OVERRIDES = {
         inspectChanges: "Inspect preserved changes",
         inspectUncertainChanges: "Check operation result before retrying",
       },
-      toastFallback: "FLOWnote Notice",
+      toastFallback: "WorkFlowBench Notice",
       sendCanceled: "Send canceled",
       model: {
         placeholder: "Model",
         hiddenUnavailable: "Model may be unavailable and has been hidden: {model}",
         unavailable: "Model unavailable or not authorized: {model}",
         switched: "Switched model: {model}",
-        resetAuto: "Reset to automatic model selection by FLOWnote.",
+        resetAuto: "Reset to automatic model selection by WorkFlowBench.",
         notReady: "Model picker is not ready yet. Try again shortly.",
         selectHint: "Please choose a model from the picker.",
         switchFailed: "Model switch failed: {message}",
@@ -567,7 +567,7 @@ const I18N_MESSAGE_OVERRIDES = {
     },
     modals: {
       diagnostics: {
-        title: "FLOWnote Diagnostics",
+        title: "WorkFlowBench Diagnostics",
         notRun: "Diagnostics has not run yet.",
         connection: "Connection",
         connectionOk: "OK ({mode})",
@@ -597,12 +597,12 @@ const I18N_MESSAGE_OVERRIDES = {
       },
       append: {
         title: "Model Requested Additional Input",
-        desc: "FLOWnote requested more input via question/tool. You can edit and insert into the input box.",
+        desc: "WorkFlowBench requested more input via question/tool. You can edit and insert into the input box.",
         useInput: "Insert into Input",
       },
       model: {
         title: "Select Model",
-        subtitle: "Use official model list from FLOWnote provider configuration",
+        subtitle: "Use official model list from WorkFlowBench provider configuration",
         search: "Search provider/model...",
         refresh: "Refresh List",
         refreshing: "Refreshing...",

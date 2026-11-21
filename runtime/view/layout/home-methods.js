@@ -480,7 +480,7 @@ function renderTodayCard(view, parent, today) {
     });
     const actions = card.createDiv({ cls: "oc-home-card-actions" });
     createActionButton(actions, "plus", homeText(view, "createDaily", "创建今日日记"), () => createAndOpenToday(view), "is-primary");
-    createActionButton(actions, "message-square", homeText(view, "planTodayWithFlow", "和 FLOWnote 规划今天"), () => prefillHomePrompt(view, "/ah-note "), "");
+    createActionButton(actions, "message-square", homeText(view, "planTodayWithFlow", "和 WorkFlowBench 规划今天"), () => prefillHomePrompt(view, "/ah-note "), "");
     return;
   }
 

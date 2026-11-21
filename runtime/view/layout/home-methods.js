@@ -753,7 +753,7 @@ function renderHomeDashboard(container) {
 
       const hero = container.createDiv({ cls: "oc-home-hero" });
       const heroText = hero.createDiv({ cls: "oc-home-hero-text" });
-      heroText.createDiv({ cls: "oc-home-eyebrow", text: "FLOWnote" });
+      heroText.createDiv({ cls: "oc-home-eyebrow", text: "WorkFlowBench" });
       heroText.createDiv({ cls: "oc-home-heading", text: homeText(this, "heroHeading", "今天从这里开始") });
       heroText.createDiv({
         cls: "oc-home-subtitle",

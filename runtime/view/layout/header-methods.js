@@ -34,13 +34,13 @@ function renderHeader(header) {
   const brand = header.createDiv({ cls: "oc-brand" });
   const logo = brand.createDiv({ cls: "oc-brand-logo" });
   setIcon(logo, FLOWNOTE_ICON_ID);
-  brand.createDiv({ cls: "oc-brand-title", text: "FLOWnote" });
+  brand.createDiv({ cls: "oc-brand-title", text: "WorkFlowBench" });
   if (!(Platform && Platform.isMobile) && typeof this.renderConnectionStatus === "function") {
     const brandStatus = brand.createDiv({ cls: "oc-brand-status" });
     this.renderConnectionStatus(brandStatus);
   }
 
-  const panelSwitch = header.createDiv({ cls: "oc-panel-switch", attr: { role: "tablist", "aria-label": "FLOWnote panel" } });
+  const panelSwitch = header.createDiv({ cls: "oc-panel-switch", attr: { role: "tablist", "aria-label": "WorkFlowBench panel" } });
   const renderPanelButton = (panel, iconName, label) => {
     const isActive = this.activePanel === panel;
     const tab = panelSwitch.createEl("button", { cls: `oc-panel-switch-btn ${isActive ? "is-active" : ""}`.trim() });

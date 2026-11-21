@@ -93,7 +93,7 @@ function renderDirectConnectionStatus(popover, view, summary) {
     title.setText(tr(view, "view.connection.directNotReady", "Direct 模式 · 未就绪"));
     appendLine(tr(view, "view.connection.providerLine", "服务商：{provider}", { provider: summary.providerLabel }));
     if (summary.missingReason) appendLine(tr(view, "view.connection.missingLine", "待补全：{reason}", { reason: summary.missingReason }));
-    appendLine(tr(view, "view.connection.openSettingsHint", "打开 Obsidian → 设置 → FLOWnote 完成配置。"));
+    appendLine(tr(view, "view.connection.openSettingsHint", "打开 Obsidian → 设置 → WorkFlowBench 完成配置。"));
     return;
   }
   title.setText(tr(view, "view.connection.providerReady", "{provider} 已就绪", { provider: summary.providerLabel }));

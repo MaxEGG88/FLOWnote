@@ -159,7 +159,7 @@ const I18N_HOME_MESSAGES = {
     statusPending: "Ожидает",
     todayMissingCopy: "Ежедневная заметка на сегодня еще не создана. Сначала задайте фокус дня, чтобы записи и обзор легли в нужное место.",
     createDaily: "Создать заметку на сегодня",
-    planTodayWithFlow: "Спланировать день с FLOWnote",
+    planTodayWithFlow: "Спланировать день с WorkFlowBench",
     focusTitle: "Фокус дня",
     focusEmpty: "Фокус дня пока не записан",
     todayProgressAria: "Выполнение задач на сегодня {rate}%",

@@ -54,7 +54,7 @@ class DiagnosticsModal extends Modal {
     contentEl.empty();
     applyResponsiveModalSurface(this, contentEl);
     contentEl.addClass("oc-diagnostics-modal");
-    contentEl.createEl("h2", { text: tr(this.t, "modals.diagnostics.title", "FLOWnote Diagnostics") });
+    contentEl.createEl("h2", { text: tr(this.t, "modals.diagnostics.title", "WorkFlowBench Diagnostics") });
 
     if (!this.result) {
       contentEl.createEl("p", { text: tr(this.t, "modals.diagnostics.notRun", "Diagnostics has not run yet.") });
@@ -115,7 +115,7 @@ class PermissionRequestModal extends Modal {
     applyResponsiveModalSurface(this, contentEl);
     contentEl.addClass("oc-perm-modal");
 
-    // Header — short, plain-language framing. NO "FLOWnote Permission Request"
+    // Header — short, plain-language framing. NO "WorkFlowBench Permission Request"
     // jargon. The user is being asked one question: do you want to allow this?
     contentEl.createEl("h2", {
       text: tr(this.t, "modals.permission.title", "AI 想做一个改动"),
@@ -235,7 +235,7 @@ class SkillEditorModal extends Modal {
     const descInput = this._field(contentEl, {
       label: tr(this.t, "modals.skillEditor.description", "技能描述"),
       hint: tr(this.t, "modals.skillEditor.descriptionHint",
-        "用一两句话说明这个技能能做什么、何时应由 FLOWnote 使用。"),
+        "用一两句话说明这个技能能做什么、何时应由 WorkFlowBench 使用。"),
       value: isEdit ? this.initial.description : "",
       multiline: true,
       rows: 3,
@@ -370,7 +370,7 @@ class AskUserQuestionModal extends Modal {
     contentEl.empty();
     applyResponsiveModalSurface(this, contentEl);
     contentEl.addClass("oc-ask-modal");
-    contentEl.createEl("h2", { text: tr(this.t, "modals.ask.title", "FLOWnote 想问你") });
+    contentEl.createEl("h2", { text: tr(this.t, "modals.ask.title", "WorkFlowBench 想问你") });
 
     const questions = Array.isArray(this.payload.questions) ? this.payload.questions : [];
     let okBtn = null;
@@ -494,7 +494,7 @@ class PromptAppendModal extends Modal {
       text: tr(
         this.t,
         "modals.append.desc",
-        "FLOWnote requested more input via question/tool. You can edit and insert into the input box.",
+        "WorkFlowBench requested more input via question/tool. You can edit and insert into the input box.",
       ),
     });
 
@@ -540,7 +540,7 @@ class ModelSelectorModal extends Modal {
     contentEl.createEl("h2", { text: tr(tFn, "modals.model.title", "Select Model") });
     contentEl.createDiv({
       cls: "oc-model-modal-subtitle",
-      text: tr(tFn, "modals.model.subtitle", "Use official model list from FLOWnote provider configuration"),
+      text: tr(tFn, "modals.model.subtitle", "Use official model list from WorkFlowBench provider configuration"),
     });
 
     const search = contentEl.createEl("input", {
@@ -762,7 +762,7 @@ class AgentModeNoticeModal extends Modal {
     const isUpdate = this.options.kind === "update";
     const currentMode = this.options.currentMode === "opencode-legacy" ? "opencode-legacy" : "direct";
     contentEl.createEl("h2", {
-      text: tr(this.t, "modals.agentModeNotice.title", "FLOWnote AI 运行方式"),
+      text: tr(this.t, "modals.agentModeNotice.title", "WorkFlowBench AI 运行方式"),
     });
     contentEl.createDiv({
       cls: "oc-release-subtitle",
@@ -810,7 +810,7 @@ class AgentModeNoticeModal extends Modal {
       text: tr(
         this.t,
         "modals.agentModeNotice.switchHint",
-        "切换位置：设置 → FLOWnote → AI 服务 → 运行方式。",
+        "切换位置：设置 → WorkFlowBench → AI 服务 → 运行方式。",
       ),
     });
 

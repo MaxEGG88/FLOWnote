@@ -1,7 +1,9 @@
-# FLOWnote
+# WorkFlowBench
+
+> 个人 AI 工作台，基于 [FLOWnote](https://github.com/1095327780/FLOWnote)（MIT）定制。核心引擎与技能归原作者 阿浩learn 所有，此处仅做品牌与展示层定制。
 
 <p align="center">
-  <img src="assets/flownote-logo.svg" width="104" alt="FLOWnote logo">
+  <img src="assets/flownote-logo.svg" width="104" alt="WorkFlowBench logo">
 </p>
 
 语言： [English](https://github.com/1095327780/FLOWnote/blob/main/README.md) | **简体中文** | [Русский](https://github.com/1095327780/FLOWnote/blob/main/README.ru.md)
